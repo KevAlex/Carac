@@ -3,36 +3,14 @@ def cargar_archivo(lab):
     ##return [x.split(" ") for x in [y.strip("\n") for y in open(lab).readlines()]][1][0].split(",")
 
 
-
-def abajo(lab, fil, col):
-##    print 'MOV Abajo','fila',fil,'colum',col
-    for x in cargar_archivo(lab)[fil+1]:
-       print list(x)[fil], 'for abajo'
-      ##  if list(x)[col]== '0':
-##            print 'hola'
-##            abajo(lab,[int(cargar_inicio(lab)[0])+1][0], int(cargar_inicio(lab)[1]))
- ##           if (fil == int(cargar_fin(lab)[0]) and col == int(cargar_fin(lab)[1])):
-         ##       print '***********Si existe camino'
-                
-           ## abajo(lab, (fil+1), col)
-##            print 'REC abajo','FIL', fil, 'COL', col
-           ## der(lab, fil, (col+1))
-            ##izq(lab,fil, (col-1))
-##        else:
-##            print 'Sale abajo', list(x)[col]
-
             
 ##print (cargar_archivo("carac.txt")[1][0])
 
-def der(lab,fil,col):
-    for x in cargar_archivo(lab)[fil]:
-        print list(x)[col] 
 
 
 
 def caracol(carac):
-    der(carac,0,0)
-    abajo(carac, 0,0)
+    
 
 
 
