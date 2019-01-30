@@ -15,7 +15,7 @@ Dado un archivo `.txt` que contiene matriz cuadrada compuesta de letras, número
 ---
 ### Funciones usadas:
 
-* cargar_archivo(lab): Esta funcion se encargar de leer como parametro (_lab_) el archivo `.txt` para su posterior manejo .
+* cargar_archivo(lab): Esta funcion se encargar de leer el archivo `.txt` para su posterior manejo .
 
 * road(elem): Funcion que guarda en una lista los elementos impresos previamente en forma de caracol.
 * lon(lab): Funcion que determina la longitud de la lista devuelta por la funcion _cargar_archivo(lab)_
@@ -29,7 +29,8 @@ Dado un archivo `.txt` que contiene matriz cuadrada compuesta de letras, número
     * lab: hace referencia al archivo .txt
     * fil: hace referencia a la posicion de la fila en la matriz
     * col: hace referencia a la posicion de la columna en la matriz 
-    * carac: refiere al archivo `.txt` a leer
+    * carac: refiere al archivo `.txt` a leer  
+    
 > El programa fue realizado en Python
 
 
