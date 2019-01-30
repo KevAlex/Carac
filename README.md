@@ -7,10 +7,10 @@
 * Alejandro Daza (_Modelos de programación II_)
 ## Información del ejercicio: 
 Dado un archivo `.txt` que contiene matriz cuadrada compuesta de letras, números, etc.. imprimir dicha matriz en forma de caracol .
-> Aclaración:cada elemento debe estar separado por **espacios en blanco** como el siguiente ejemplo de una matriz cuadrada (3x3):
-a b c   
-s f g
-r t u
+> Aclaración:cada elemento debe estar separado por **espacios en blanco** como el siguiente ejemplo de una matriz cuadrada (3x3):  
+> a b c  
+> d e f  
+> g h i
 
 ---
 ### Funciones usadas:
@@ -26,5 +26,7 @@ r t u
 * caracol(carac): FUncion encargada de poner en funcionamiento el recorrido de la matriz
 
 > El programa fue realizado en Python
+
+
 
 
