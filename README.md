@@ -1,7 +1,7 @@
 # Impresión en caracol
 ***
 ### Elaborado por: 
-* K. Alexander Diaz Pacheco
+* K. Alexander Diaz Pacheco. Cod: 20162020105
 ---
 ### Presentado para:
 * Alejandro Daza (_Modelos de programación II_)
