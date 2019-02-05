@@ -33,7 +33,7 @@ Dado un archivo `.txt` que contiene matriz cuadrada compuesta de letras, número
     * carac: refiere al archivo .txt a leer  
     * h: contador que permite imprimir el ultimo elemento de la matriz
     
-> El programa fue realizado en Python
+> El programa fue realizado en Python, usar version 3.6.6 para evitar errores
 
 
 
