@@ -3,12 +3,13 @@ def cargar_archivo(lab):
     return [x.split(" ") for x in [y.strip("\n") for y in open(lab).readlines()]]
     ##return [x.split(" ") for x in [y.strip("\n") for y in open(lab).readlines()]][1][0].split(",")
 
-  
+
+
 def der(lab,fil,col,cz,fz,n,a,h):
     
     if(col<=cz):
         for x in cargar_archivo(lab)[fil][col]:
-            print x 
+            print (x,end=' ')
             #print fil, 
             der(lab,fil, (col+1),cz,fz,n,a,h)
     else:
@@ -19,13 +20,13 @@ def der(lab,fil,col,cz,fz,n,a,h):
             if(h==0):
                 down(lab,(fil+1),(col-1), (cz-1),fz, (n+1),a, (h+1))
             else:
-                print 'FIN Recorrido'
+                print ('FIN Recorrido')
              
 def down(lab,fil,col,cz,fz,n,a,h):
     #print'Fil', fil, 'col', col
     if(fil<=fz ):
         for x in cargar_archivo(lab)[fil][col]:
-            print x 
+            print (x,end=' ')
             down(lab,(fil+1), col, cz,fz,n,a,h)
     else:
         if ((cz!=a and fz!=n ) ):
@@ -36,14 +37,14 @@ def down(lab,fil,col,cz,fz,n,a,h):
             if (h==0):
                 izq(lab,(fil-1), (col-1), (cz), (fz),n,a, (h+1))
             else:
-                print 'FIN Recorrido'
+                print ('FIN Recorrido')
             
 
 def izq(lab,fil,col,cz,fz,n,a,h):
     #print 'col', col, 'Fil', fil, 'fz', fz, 'IZQ'
     if(col>= (0+a)  ):
         for x in cargar_archivo(lab)[fil][col]:
-            print x
+            print (x,end=' ')
     
             izq(lab,fil, (col-1),cz,fz,n,a,h)
     else:
@@ -55,13 +56,13 @@ def izq(lab,fil,col,cz,fz,n,a,h):
             if(h==0):
                 up(lab,(fil-1),(col+1),(cz),(fz-1),n, (a+1), (h+1))
             else:
-                print 'FIN Recorrido'
+                print ('FIN Recorrido')
 
 def up(lab,fil,col,cz,fz,n,a,h):
    # print 'col', col, 'Fil', fil, 'fz', fz
     if(fil>= (0+n) ):
         for x in cargar_archivo(lab)[fil][col]:
-            print x 
+            print (x,end=' ') 
            
             up(lab,(fil-1), col,cz,fz,n,a,h)
     else:
@@ -72,7 +73,7 @@ def up(lab,fil,col,cz,fz,n,a,h):
             if(h==0):
                 der(lab, (fil+1), (col+1), cz,(fz),n,a, (h+1))
             else:
-                print 'FIN Recorrido'
+                print ('FIN Recorrido')
         
 def lon(lab):
     return len(cargar_archivo("carac.txt")[0])-1   
@@ -86,6 +87,7 @@ def caracol(carac):
 
 #print len(cargar_archivo("carac.txt")[0])-1
 caracol("carac.txt")
+
 #print cargar_archivo("carac.txt")
 #print lon("carac.txt")
 
